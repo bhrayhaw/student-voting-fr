@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const base_url = import.meta.env.BASE_URL;
+const base_url = import.meta.env.VITE_BASE_URL;
 
 const FileUpload: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
