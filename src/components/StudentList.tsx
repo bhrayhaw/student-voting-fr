@@ -17,7 +17,7 @@ const StudentList: React.FC = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get(`${base_url}/students/`);
+        const response = await axios.get(`${base_url}/api/students/`);
         setStudents(response.data);
       } catch (error) {
         console.error("Error fetching students:", error);

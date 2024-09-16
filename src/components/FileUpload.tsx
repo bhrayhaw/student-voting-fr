@@ -24,7 +24,7 @@ const handleSubmit = async (event: React.FormEvent) => {
 
   try {
     const response = await axios.post(
-      `${base_url}/upload/`,
+      `${base_url}/api/upload/`,
       formData,
       {
         headers: {
